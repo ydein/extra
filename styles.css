@@ -196,11 +196,34 @@ img {
 .search_hidden {
 	display: none;
 }
-	.search_hidden:hover {
-
-	}
 .search__img, .user__img {
 	min-width: 10px;
+}
+.label {
+  display: block;
+}
+
+.input {
+  display: none;
+}
+.input:checked ~ .search_hidden {
+	display: block;
+}
+.input:checked ~ .search__img {
+	display: none;
+}
+.search__submit {
+	width: 1.5em;
+	background: url(img/search.png) no-repeat bottom center;
+	border: none;
+	background-size: contain;
+	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	cursor: pointer;
+}
+.search__submit:focus {
+	outline: 0;
 }
 /************NAVIGATION*************/
 .categories-nav {

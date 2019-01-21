@@ -19,11 +19,15 @@
 				<li class="social__item pinterest"><a class="link pinterest__icon social__link" href="#"><img class="pinterest__img" src="img/pinterest.png" alt=""></a><a class="link pinterest__name social__link" href="#">pinterest</a></li>
 		</ul>
 		</div>
-		<div class="search header__item"><img class="search__img" src="img/search.png" alt="">
-			<form action="index.html" method="post" class="search_hidden">
-				  <input type="search" name="search" placeholder="поиск" class="search__input" />
-				  <input type="submit" name="submit" value="" class="search__submit" />
-			</form>
+		<div class="search header__item">
+			<label class="label">
+				<input class="input" type="checkbox" name="">
+				<img class="search__img" src="img/search.png" alt="">
+				<form action="index.html" method="post" class="search_hidden">
+					  <input type="search" name="search" placeholder="Look for..." class="search__input" />
+					  <input type="submit" name="submit" value="" class="search__submit" />
+				</form>
+			</label>
 		</div>
 		<div class="user header__item"><img class="user__img" src="img/user.png" alt=""></div>
 	</nav>
@@ -232,5 +236,6 @@ masonryEvents.forEach( function(event) {
 /* Do a resize once more when all the images finish loading */
 waitForImages();
 </script>
+
 </body>
 </html>
