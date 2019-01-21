@@ -61,7 +61,7 @@
 }
 body {
 	display: grid;
-	grid-template-columns: minmax(50px,4.375%) 93.625%;
+	grid-template-columns: minmax(50px,4.375%) 1fr;
 	grid-template-areas: 
 		"header header"
 		"nav main";
@@ -284,7 +284,9 @@ img {
     display: grid;
     grid-gap: 1.7em;
     grid-template-columns: repeat(auto-fill, minmax(260px,31.5%));
-    grid-auto-rows: 0;    
+    grid-auto-rows: 0;
+    justify-content: center;
+	margin-right: 2%; 
   }
 
   .masonry-content {
