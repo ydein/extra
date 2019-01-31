@@ -1,0 +1,78 @@
+body {
+}
+.header {
+	position: relative;
+	min-height: 3.5em;
+}
+.header__logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0.9em;
+	margin: 0 1.6em;
+}
+.header__nav {
+	position: absolute;
+	right: 0;
+	min-width: 12em;
+}
+@media only screen and (max-width: 430px) {
+	.header__nav {
+		left: 17em;
+	}
+}
+.header__item {
+	float: left;
+	min-height: 100%;
+	padding: 0.9em;
+}
+.search, .user {
+	padding-bottom: 0.85em;
+}
+.social__link {
+	padding-top: 1.2em;
+	padding-bottom: 1em;
+	display: inline-block;
+	vertical-align: middle;
+}
+.social_hidden {
+	top: 3.2em;
+}
+.categories-nav {
+	float: left;
+}
+.content {
+	width: 100%;
+	margin-left: 6%;
+}
+.masonry-brick {
+	width: 28%;
+	float: left;
+	margin-left: 2%;
+	margin-bottom: 1em;
+}
+@media only screen and (max-width: 950px) {
+	.masonry-brick {
+		width: 43%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.masonry-brick {
+		width: 82%;
+	}
+	.content {
+	margin-left: 14%;
+}
+}
+.article__item:hover .article__read-more {
+	display: block;
+	width: 10em;
+	left: 20%;
+	top: 45%;
+}
+.arrow {
+	float: left;
+}
+.text {
+	text-indent: 0.5em;
+}

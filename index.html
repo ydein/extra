@@ -32,6 +32,7 @@
 		<div class="user header__item"><img class="user__img" src="img/user.png" alt=""></div>
 	</nav>
 </header>
+
 <nav class="categories-nav">
 	<ul class="categories-list">
 		<li class="categories-list__item">
@@ -235,6 +236,33 @@ masonryEvents.forEach( function(event) {
 } );
 /* Do a resize once more when all the images finish loading */
 waitForImages();
+</script>
+<script>
+	var SupportsCSS = function (property, value) {
+    try {
+        var element = document.createElement('span');
+        if (element.style[property] !== undefined) 
+            element.style[property] = value;
+        else 
+            return false;
+
+        return element.style[property] === value;
+    } catch (e) {
+        return false;
+    }
+};
+
+// Проверяем
+if ( SupportsCSS('display', 'grid') == false ) {
+
+function loadCss(href) {
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    document.head.appendChild(link);
+}
+loadCss("no-grid.css");
+}
 </script>
 
 </body>
