@@ -207,8 +207,9 @@ img {
   display: none;
 }
 .input:checked ~ .search_hidden {
-	display: block;
+	display: inline-block;
 }
+
 .input:checked ~ .search__img {
 	display: none;
 }
@@ -224,6 +225,26 @@ img {
 }
 .search__submit:focus {
 	outline: 0;
+}
+.search__input {
+	width: 9em;
+}
+@media only screen and (max-width: 600px) {
+	.search__input {
+		width: 5em;
+	}
+	.search__submit {
+		width: 1em;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.search__submit {
+		display: none;
+	}
+	.search__input {
+		font-size: 0.6em;
+		padding: 0;
+	}
 }
 /************NAVIGATION*************/
 .categories-nav {
